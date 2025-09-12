@@ -1,1 +1,9 @@
 @use '../abstracts/index' as abs;
+
+.hero {
+  display: flex;
+  padding: 50px;
+}
+.hero__content h1 {
+  font-size: 2.5em;
+}
