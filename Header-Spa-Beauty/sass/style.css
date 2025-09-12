@@ -1,8 +1,48 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
   justify-content: space-between;
-  padding: 20px;
-  background: #f8f8f8;
+  align-items: center;
+  padding: 20px 0px;
+}
+.header__logo {
+  flex-shrink: 0;
+}
+.header__logo img {
+  padding-left: 35%;
+  transition: transform 0.3s ease;
+}
+.header__logo img:hover {
+  transform: scale(1.05);
+}
+.header__nav {
+  text-align: center;
+}
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+}
+.header__nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+.header__nav ul li a:hover {
+  color: #007bff;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-right: 70px;
 }
 
 .hero {
