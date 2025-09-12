@@ -3,9 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Header - Spa & Beauty</title>
 </head>
 <body>
-  <h1>Hola a todos</h1>
+  <!--============ HEADER ===============-->
+  <header class="header">
+    <div class="header__logo">
+      <a href="#">
+        <img src="img/GlowQueen.png" alt="GlowQueen logo" />
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__right">
+      <div class="header__icons">
+        <a href="#"><img src="img/Search.svg" alt="Search" /></a>
+        <a href="#"><img src="img/Shopping Bag.svg" alt="Cart" /></a>
+      </div>
+      <ul class="header__auth">
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+  </header>
+  <!--============ MAIN ===============-->
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Bring back the beauty and glow of your skin</h1>
+        <p>We provide you various treatments from head to toe...</p>
+        <div class="hero__buttons">
+          <a class="btn-primary" href="">Book Now</a>
+          <a class="btn-secondary" href="">
+            <img src="img/icon.png" width="40" alt="">Watch Video
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <img src="img/icon (1).png" alt="">
+            <p class="number">15+</p>
+            <p>Special Treatment</p>
+          </div>
+          <div class="stat">
+            <img src="img/icon (2).png" alt="">
+            <p class="number">25+</p>
+            <p>Professional Therapist</p>
+          </div>
+          <div class="stat">
+            <img src="img/icon (3).png" alt="">
+            <p class="number">100%</p>
+            <p>Herbal Cream Formula</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <img src="img/women.png" alt="Woman with glowing skin" />
+        <div class="testimonial testimonial--top">
+          <p>“I have a regular schedule to take treatment from GlowQueen...”</p>
+          <span class="author">Sophia Princeton</span>
+        </div>
+        <div class="testimonial testimonial--bottom">
+          <p>“For the past few years, I've had a hard time finding...”</p>
+          <span class="author">Tamara Jules</span>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
