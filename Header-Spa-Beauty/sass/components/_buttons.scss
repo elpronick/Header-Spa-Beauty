@@ -1,1 +1,11 @@
 @use '../abstracts/index' as abs;
+
+.btn-primary {
+  @include abs.button-style();
+}
+.btn-secondary {
+  @include abs.button-style($background-color: transparent, $text-color: abs.$dark-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

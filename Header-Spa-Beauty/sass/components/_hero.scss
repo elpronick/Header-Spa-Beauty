@@ -3,7 +3,24 @@
 .hero {
   display: flex;
   padding: 50px;
+  margin-top: 20px;
+
+  &__content {
+    padding-right: 15px;
+
+    .hero__buttons {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+
+  }
+  
+  &__image {
+    padding-right: 170px;
+  }
 }
-.hero__content h1 {
-  font-size: 2.5em;
-}
+

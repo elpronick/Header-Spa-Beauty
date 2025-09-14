@@ -28,3 +28,32 @@
 }
 
 // MIXINS--------------------
+@mixin button-style(
+  $background-color: $dark-blue, // Color de fondo predeterminado (azul)
+  $text-color: #ffffff, // Color de texto predeterminado (blanco)
+  $border: 1px solid transparent, // Borde predeterminado
+  $hover-background: darken($background-color, 10%), // Fondo más oscuro al hover
+  $padding: 10px 20px // Padding predeterminado
+) {
+  display: inline-block;
+  padding: $padding;
+  border: $border;
+  border-radius: 50px; // Bordes redondeados suaves
+  background-color: $background-color;
+  color: $text-color;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-background;
+    color: $text-color; // Mantiene el color de texto
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($background-color, 0.2); // Resaltar al enfocar
+  }
+}
