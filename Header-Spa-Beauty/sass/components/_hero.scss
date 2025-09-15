@@ -8,7 +8,6 @@
   &__content {
     flex: 1;
     max-width: 50%;
-    padding-right: 40px;
 
     &::before {
       content: '';
@@ -16,10 +15,13 @@
       top: -387px;
       left: 880px;
       width: 100%; // O un porcentaje como 60% si no cubre todo
-      height: 100%; // O un valor fijo como 400px si es una sección
+      height: 100%; // O un vtop: -347px;alor fijo como 400px si es una sección
       background-color: #A9D6CB;
       z-index: -1; // Detrás del contenido
       opacity: 0.8; // Ajusta la transparencia si es necesario
+      background-image: url(/Header-Spa-Beauty/img/Vector.svg);
+      background-repeat: no-repeat;
+      background-position: -127px 538px;
     }
 
     h1 {
@@ -27,19 +29,32 @@
       font-weight: 700;
       margin-bottom: 20px;
       line-height: 1.2;
+      color: abs.$dark-blue;
     }
     
     p {
-      font-size: 1.1em;
+      font-size: 1em;
       line-height: 1.6;
       margin-bottom: 30px;
       color: #333333;
+    }
+
+    &>p:nth-child(2) {
+      color: #909090;
     }
 
     .hero__buttons {
       display: flex;
       align-items: center;
       margin-bottom: 50px;
+
+      img {
+      width: 30px; // Mantiene tu tamaño
+      height: 30px; // Asegura proporción cuadrada para círculo
+      border-radius: 50%; // Recorta a círculo
+      box-shadow: 0 4px 8px rgba(17, 17, 17, 0.2); // Sombra en el círculo
+      overflow: hidden; // Asegura que la sombra no se extienda más allá
+      }
     }
   }
   
@@ -79,23 +94,22 @@
     position: relative;
 
     img {
-      width: 500px; 
+      width: 550px; 
       height: auto;
       display: block;
     }
     
     .testimonial {
-      background-color: rgba(255, 255, 255, 0.5); 
+      background-color: rgba(255, 255, 255, 0.4); 
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+      box-shadow: 0 4px 8px rgba(143, 143, 143, 0.1); 
       backdrop-filter: blur(5px);
       margin: 15px 0;
-      font-style: italic;
       color: black; 
       position: absolute; 
       max-width: 240px; 
-      
+
       p {
         margin: 0 0 10px 0;
         font-size: 0.9em;
@@ -114,11 +128,11 @@
       
       &--top {
         top: 161px;
-        right: -16px;
+        right: -5px;
       }
       
       &--bottom {
-        bottom: 20px;
+        bottom: 61px;
         right: 92px;
       }
     }
