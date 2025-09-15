@@ -10,6 +10,18 @@
     max-width: 50%;
     padding-right: 40px;
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -387px;
+      left: 880px;
+      width: 100%; // O un porcentaje como 60% si no cubre todo
+      height: 100%; // O un valor fijo como 400px si es una sección
+      background-color: #A9D6CB;
+      z-index: -1; // Detrás del contenido
+      opacity: 0.8; // Ajusta la transparencia si es necesario
+    }
+
     h1 {
       font-size: 2.5em;
       font-weight: 700;
@@ -101,13 +113,13 @@
       }
       
       &--top {
-        top: 162px;
-        right: 20px;
+        top: 161px;
+        right: -16px;
       }
       
       &--bottom {
         bottom: 20px;
-        right: 20px;
+        right: 92px;
       }
     }
   }
