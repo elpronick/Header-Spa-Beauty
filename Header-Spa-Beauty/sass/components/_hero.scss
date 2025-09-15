@@ -42,8 +42,8 @@
           border-radius: 10px;
 
           img {
-            width: 40px;
-            height: 40px;
+            width: 70px;
+            height: 70px;
             margin-bottom: 10px;
           }
 
@@ -64,6 +64,51 @@
   
   &__image {
     padding-right: 170px;
+    position: relative;
+
+    img {
+      width: 500px; 
+      height: auto;
+      display: block;
+    }
+    
+    .testimonial {
+      background-color: rgba(255, 255, 255, 0.5); 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+      backdrop-filter: blur(5px);
+      margin: 15px 0;
+      font-style: italic;
+      color: black; 
+      position: absolute; 
+      max-width: 240px; 
+      
+      p {
+        margin: 0 0 10px 0;
+        font-size: 0.9em;
+        line-height: 1.5;
+      }
+      
+      .author {
+        display: block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.85em;
+        color: #1f2c45; 
+        text-align: left;
+        font-weight: bold;
+      }
+      
+      &--top {
+        top: 162px;
+        right: 20px;
+      }
+      
+      &--bottom {
+        bottom: 20px;
+        right: 20px;
+      }
+    }
   }
 }
-
