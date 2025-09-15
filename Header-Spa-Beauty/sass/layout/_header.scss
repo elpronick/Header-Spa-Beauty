@@ -58,8 +58,15 @@
     .header__auth {
       display: flex;
       align-items: center;
+      justify-content: center;
+      list-style: none;
       margin-left: 10px;
       gap: 30px;
+
+      li:first-child a {
+          color: abs.$dark-blue;
+          font-weight: 400;
+        }
     }
   }
 }
