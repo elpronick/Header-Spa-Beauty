@@ -12,17 +12,17 @@
     &::before {
       content: '';
       position: absolute;
-      top: -387px;
-      left: 880px;
+      top: -806px;
+      left: 840px;
       width: 100%; // O un porcentaje como 60% si no cubre todo
       height: 100%; // O un vtop: -347px;alor fijo como 400px si es una sección
       background-color: #A9D6CB;
       z-index: -1; // Detrás del contenido
       opacity: 0.8; // Ajusta la transparencia si es necesario
-      background-image: url(/Header-Spa-Beauty/img/Vector.svg);
+      background-image: url(/img/Vector.svg);
       background-size: 300px;
       background-repeat: no-repeat;
-      background-position: -36px 549px;
+      background-position: -54px 975px;
     }
 
     h1 {
