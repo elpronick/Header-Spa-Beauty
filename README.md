@@ -1,2 +1,2 @@
-# Proyectos Header-Spa-Beauty
+# Proyecto Header-Spa-Beauty
 Creación de un header mediante SASS
